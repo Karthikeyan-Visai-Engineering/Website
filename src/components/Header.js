@@ -7,7 +7,7 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-gray-100 shadow-md">
+    <header className="bg-gradient-to-r from-gray-900 to-gray-800 text-white ">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         
         {/* Logo */}
@@ -55,7 +55,7 @@ function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white text-3xl"
+          className="md:hidden text-blue-900 text-3xl"
           onClick={() => setMenuOpen(true)}
         >
           <FaBars />
@@ -64,7 +64,7 @@ function Header() {
 
       {/* Full-Screen Mobile Navigation */}
       {menuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 flex flex-col justify-center items-center z-50 transition duration-300">
+        <div className="fixed inset-0 bg-gradient-to-r from-gray-900 to-gray-700 bg-opacity-90 flex flex-col justify-center items-center z-50 transition duration-300">
           {/* Close Button */}
           <button
             className="absolute top-6 right-6 text-white text-4xl"

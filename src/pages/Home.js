@@ -57,7 +57,7 @@ function Home() {
           <h2 className="text-5xl font-extrabold text-center text-gray-900">
             WELCOME TO <span className="text-blue-700">VISAI ENGINEERING</span>
           </h2>
-          <div className="w-180 h-1 bg-blue-500 mx-auto mt-3 rounded-full"></div>
+          <div className="w-24 h-1 bg-blue-500 mx-auto mt-3 rounded-full"></div>
           <p className="text-gray-700 text-lg md:text-2xl px-6 py-6 leading-relaxed text-center">
             "At Visai Engineering, we specialize in innovative building and infrastructure solutions. Our expertise spans structural and mechanical design engineering. Our team of certified professionals deliver industry-leading services with cutting-edge technology."
           </p>
@@ -67,7 +67,7 @@ function Home() {
 
         <div className="mt-10">
           <h2 className="text-3xl font-extrabold text-yellow-400 uppercase text-center p-5">STRUCTURAL ENGINEERING</h2>
-          <div className="w-100 h-1 bg-yellow-500 mx-auto mt-3 rounded-full"></div>
+          <div className="w-24 h-1 bg-yellow-500 mx-auto mt-3 rounded-full"></div>
           <div className="mt-16 bg-gray-100 text-gray-900 rounded-lg shadow-lg p-10 flex flex-col lg:flex-row items-center transform hover:scale-105 transition duration-300">
             <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
               <img
@@ -87,7 +87,7 @@ function Home() {
         </div>
 
         <h2 className="text-3xl font-extrabold text-yellow-400 uppercase text-center p-10">MECHANICAL ENGINEERING</h2>
-        <div className="w-100 h-1 bg-yellow-500 mx-auto mb-10 rounded-full"></div>
+        <div className="w-24 h-1 bg-yellow-500 mx-auto mb-10 rounded-full"></div>
 
         <div className="bg-gray-100 p-5 rounded-lg">
           {/* HVAC Solution */}
@@ -131,6 +131,7 @@ function Home() {
         </div>
 
         <h1 className="text-5xl font-extrabold text-orange-400 py-8 text-center">SAFETY AND SUSTAINABILITY</h1>
+        <div className="w-24 h-1 bg-yellow-500 mx-auto mb-10 rounded-full"></div>
 
         <div className="mt-16 bg-gray-100 text-gray-900 rounded-lg shadow-lg p-10 flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
