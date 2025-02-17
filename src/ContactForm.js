@@ -4,7 +4,7 @@ import axios from "axios";
 function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
-    mail: "",
+    email: "",  // Fix: Use "email" to match FastAPI model
     subject: "",
     message: "",
   });
@@ -18,9 +18,9 @@ function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost/contact.php", formData);
+      const res = await axios.post("http://localhost:8000/contact/", formData);  // Fix: Correct API endpoint
       setResponseMessage(res.data.message);
-      setFormData({ name: "", mail: "", subject: "", message: "" });
+      setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
       setResponseMessage("Error submitting the form.");
     }
@@ -35,65 +35,16 @@ function ContactForm() {
         <div className="w-20 h-1 bg-yellow-400 mx-auto mt-3 rounded-full"></div>
 
         <form className="space-y-6 mt-3" onSubmit={handleSubmit}>
-          <div>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Enter your name"
-              className="w-full mt-2 p-3 border border-gray-900 rounded-lg bg-white text-blue-950"
-              required
-            />
-          </div>
-
-          <div>
-            <input
-              type="mail"
-              name="mail"
-              value={formData.mail}
-              onChange={handleChange}
-              placeholder="Enter your email"
-              className="w-full mt-2 p-3 border border-gray-900 rounded-lg bg-white text-blue-950"
-              required
-            />
-          </div>
-
-          <div>
-            <input
-              type="text"
-              name="subject"
-              value={formData.subject}
-              onChange={handleChange}
-              placeholder="Enter the subject"
-              className="w-full mt-2 p-3 border border-gray-900 rounded-lg bg-white text-blue-950"
-              required
-            />
-          </div>
-
-          <div>
-            <textarea
-              rows="5"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Write your message..."
-              className="w-full mt-2 p-3 border border-gray-900 rounded-lg bg-white text-blue-950"
-              required
-            ></textarea>
-          </div>
-
-          <button
-            type="submit"
-            className="w-full bg-yellow-500 text-gray-900 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-600 transition duration-300"
-          >
+          <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Enter your name" className="w-full p-3 border rounded-lg" required />
+          <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Enter your email" className="w-full p-3 border rounded-lg" required />
+          <input type="text" name="subject" value={formData.subject} onChange={handleChange} placeholder="Enter the subject" className="w-full p-3 border rounded-lg" required />
+          <textarea rows="5" name="message" value={formData.message} onChange={handleChange} placeholder="Write your message..." className="w-full p-3 border rounded-lg" required></textarea>
+          <button type="submit" className="w-full bg-yellow-500 text-gray-900 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">
             Send Message
           </button>
         </form>
 
-        {responseMessage && (
-          <p className="text-white text-center mt-4">{responseMessage}</p>
-        )}
+        {responseMessage && <p className="text-white text-center mt-4">{responseMessage}</p>}
       </div>
     </div>
   );

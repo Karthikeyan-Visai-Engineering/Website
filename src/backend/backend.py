@@ -9,9 +9,9 @@ app = FastAPI()
 # ✅ Enable CORS properly
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Change this to your frontend URL for security
+    allow_origins=["http://localhost:3000"],  # Allow React frontend
     allow_credentials=True,
-    allow_methods=["*"],  # ✅ Ensure OPTIONS requests are handled
+    allow_methods=["*"],  
     allow_headers=["*"],
 )
 
@@ -19,18 +19,16 @@ app.add_middleware(
 JSON_FILE = "contact_messages.json"
 file_path = Path(JSON_FILE)
 
-# Ensure the file exists
 if not file_path.exists():
-    file_path.write_text("[]", encoding="utf-8")  # Initialize as an empty JSON array
+    file_path.write_text("[]", encoding="utf-8")  # Initialize as empty JSON
 
-# ✅ Define Contact Form Model
+# ✅ Define Contact Form Model (Match React form)
 class ContactForm(BaseModel):
     name: str
-    email: str
+    email: str  # Fix: Ensure it matches frontend
     subject: str
     message: str
 
-# ✅ Ensure route is correct
 @app.post("/contact/")
 async def submit_contact_form(form: ContactForm):
     try:
@@ -47,7 +45,6 @@ async def submit_contact_form(form: ContactForm):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-# ✅ View stored messages
 @app.get("/view-messages/")
 async def view_messages():
     if not file_path.exists():
@@ -58,7 +55,6 @@ async def view_messages():
 
     return data
 
-# ✅ Root endpoint
 @app.get("/")
 def read_root():
     return {"message": "FastAPI Contact Form Backend is Running!"}

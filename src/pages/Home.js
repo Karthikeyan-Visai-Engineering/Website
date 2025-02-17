@@ -45,7 +45,7 @@ function Home() {
             (text, index) => (
               <div
                 key={index}
-                className="bg-yellow-500 text-black text-bold px-6 py-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
+                className="bg-yellow-500 text-black px-6 py-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
               >
                 {text}
               </div>
@@ -59,7 +59,7 @@ function Home() {
           </h2>
           <div className="w-24 h-1 bg-blue-500 mx-auto mt-3 rounded-full"></div>
           <p className="text-gray-700 text-lg md:text-2xl px-6 py-6 leading-relaxed text-center">
-            "At Visai Engineering, we specialize in innovative building and infrastructure solutions. Our expertise spans structural and mechanical design engineering. Our team of certified professionals deliver industry-leading services with cutting-edge technology."
+            "At Visai Engineering, we specialize in innovative building and infrastructure solutions. Our expertise spans structural and mechanical design engineering. Our team of certified professionals delivers industry-leading services with cutting-edge technology."
           </p>
         </div>
 
@@ -80,7 +80,7 @@ function Home() {
             <div className="w-full lg:w-1/2 p-8">
               <h1 className="text-3xl font-bold mb-10 mt-1 lg:text-left">STRUCTURAL ENGINEERING</h1>
               <p className="text-gray-700 text-lg mb-6">
-              Our structural engineers design and analyze buildings and infrastructure to ensure safety, stability, and durability. They work with materials and collaborate with other professionals to create efficient, sustainable structures while adhering to safety standards and regulations.
+                Our structural engineers design and analyze buildings and infrastructure to ensure safety, stability, and durability.
               </p>
             </div>
           </div>
@@ -96,58 +96,26 @@ function Home() {
               <img src={hvac} alt="HVAC Solution" className="w-full h-64 object-cover rounded-lg" />
             </div>
             <div className="w-full lg:w-1/2 p-8">
-              <h2 className="text-4xl font-bold mb-4">HVAC SOLUTION</h2>
+              <h1 className="text-3xl font-bold mb-4">MECHANICAL ENGINEERING</h1>
               <p className="text-gray-700 text-lg mb-6">
-                HVAC stands for Heating, Ventilation, and Air Conditioning. It refers to the system used to regulate indoor temperature, humidity, air quality, and circulation. HVAC systems are crucial for maintaining comfort in buildings, ensuring efficient heating and cooling, and promoting good air quality through ventilation.
-              </p>
-            </div>
-          </div>
-
-          {/* Plumbing Systems */}
-          <div className="bg-gray-100 text-gray-900 rounded-lg p-5 flex flex-col lg:flex-row items-center">
-            <div className="w-full lg:w-1/2 p-8">
-              <h2 className="text-4xl font-bold mb-4">PLUMBING SYSTEMS</h2>
-              <p className="text-gray-700 text-lg mb-6">
-                Plumbing systems involve the installation and maintenance of pipes, fixtures, and fittings to manage water supply, drainage, and waste removal in buildings.
-              </p>
-            </div>
-            <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
-              <img src={plumbing} alt="Plumbing Systems" className="w-full h-64 object-cover rounded-lg" />
-            </div>
-          </div>
-
-          {/* Fire Protection */}
-          <div className="bg-gray-100 text-gray-900 rounded-lg p-5 flex flex-col lg:flex-row items-center">
-            <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
-              <img src={fireSafety} alt="Fire Protection" className="w-full h-64 object-cover rounded-lg" />
-            </div>
-            <div className="w-full lg:w-1/2 p-8">
-              <h2 className="text-4xl font-bold mb-4">FIRE PROTECTION</h2>
-              <p className="text-gray-700 text-lg mb-6">
-                A fire protection system is designed to prevent, detect, and control fires to minimize damage and ensure safety.
+              Our mechanical engineers design the hvac, plumbing and fire protection systems of buildings. They turn concrete buildings into places of comfort & safety which enable great productivity for the final users. 
               </p>
             </div>
           </div>
         </div>
 
         <h1 className="text-5xl font-extrabold text-orange-400 py-8 text-center">SAFETY AND SUSTAINABILITY</h1>
-        <div className="w-24 h-1 bg-yellow-500 mx-auto mb-10 rounded-full"></div>
 
         <div className="mt-16 bg-gray-100 text-gray-900 rounded-lg shadow-lg p-10 flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
             <img src={safety} alt="Safety Worker" className="w-full h-full object-cover rounded-l-lg" />
           </div>
           <div className="w-full lg:w-1/2 p-8">
-              <h2 className="text-4xl font-bold mb-4">SAFETY</h2>
-              <p className="text-gray-700 text-lg mb-6">
-              We rigorously follow the industry safety standards to ensure the safety of our workers and the public. Safety is our number one priority.
-              </p>
-              <h2 className="text-4xl font-bold mb-4">SUSTAINABILITY
-              </h2>
-              <p className="text-gray-700 text-lg mb-6">
-              We prioritizesustainability in all our designs to ensure minimal environmental impact. Managing the environment is crucial for future generations, and we believe in always doing the right thing.
-              </p>
-            </div>
+            <h2 className="text-4xl font-bold mb-4">SAFETY & SUSTAINABILITY</h2>
+            <p className="text-gray-700 text-lg mb-6">
+              We prioritize sustainability to ensure minimal environmental impact and future responsibility.
+            </p>
+          </div>
         </div>
       </div>
     </div>
