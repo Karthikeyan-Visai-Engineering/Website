@@ -111,17 +111,14 @@ function Footer() {
                 Our Locations
               </h2>
 
-              <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg mb-4">
-                <h1 className="text-2xl text-orange-400 font-bold mb-2">INDIA</h1>
+              <div className=" text-white p-2 rounded-lg shadow-lg mb-4">
+                <h1 className="text-2xl text-orange-400 font-bold mb-2 ">INDIA</h1>
                 <p className="text-lg leading-relaxed">
                   136, Arcot Road, 3rd Floor Suite #325, <br />
                   Shyamala Tower, Saligramam, <br />
                   Chennai - 93, Tamil Nadu, India
                 </p>
-              </div>
-
-              <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg">
-                <h1 className="text-2xl text-orange-400 font-bold mb-2">USA</h1>
+                <h1 className="text-2xl text-orange-400 font-bold mb-2 py-1">USA</h1>
                 <p className="text-lg leading-relaxed">
                   Visai Engineering LLC <br />
                   6575 West Loop South, Suite 500 <br />
@@ -129,6 +126,7 @@ function Footer() {
                   United States of America
                 </p>
               </div>
+
             </div>
           </div>
 
