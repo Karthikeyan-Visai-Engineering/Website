@@ -17,6 +17,39 @@ function Footer() {
           </h1>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+             {/* Location Section */}
+             <div>
+              <h2 className="text-xl font-semibold mb-4 text-yellow-400">
+                Our Locations
+              </h2>
+
+              <div className=" text-white p-2 rounded-lg shadow-lg mb-4">
+                <h1 className="text-2xl text-orange-400 font-bold mb-2 ">INDIA</h1>
+                <p className="text-lg leading-relaxed">
+                  Visai Engineering India Pvt Ltd <br/>
+                  136, Arcot Road, 3rd Floor Suite #325, <br />
+                  Shyamala Tower, Saligramam, <br />
+                  Chennai - 93, Tamil Nadu, India<br />
+                  Ph - +91 72008 73833<br />
+                  </p>
+                <h1 className="text-2xl text-orange-400 font-bold mb-2 py-2">CANADA</h1>
+                <p className="text-lg leading-relaxed">
+                  Visai Engineering Inc<br />
+                  500 - 4th Avenue SW, Suite 2500 <br />
+                  Calgary,AB T2P2V6, <br />
+                  Ph - +1 403-604-9777 <br />
+                </p>
+                <h1 className="text-2xl text-orange-400 font-bold mb-2 py-2">USA</h1>
+                <p className="text-lg leading-relaxed">
+                  Visai Engineering  <br />
+                  6575 West Loop South, Suite 500 <br />
+                  Bellaire, Texas 77401 <br />
+                  Ph - +1 270-777-2620
+                </p>
+              </div>
+
+            </div>
+
             {/* Quick Links */}
             <div>
               <h2 className="text-xl font-semibold mb-4 text-yellow-400">
@@ -105,47 +138,7 @@ function Footer() {
               </div>
             </div>
 
-            {/* Location Section */}
-            <div>
-              <h2 className="text-xl font-semibold mb-4 text-yellow-400">
-                Our Locations
-              </h2>
-
-              <div className=" text-white p-2 rounded-lg shadow-lg mb-4">
-                <h1 className="text-2xl text-orange-400 font-bold mb-2 ">INDIA</h1>
-                <p className="text-lg leading-relaxed">
-                  Visai Engineering <br/>
-                  136, Arcot Road, 3rd Floor Suite #325, <br />
-                  Shyamala Tower, Saligramam, <br />
-                  Chennai - 93, Tamil Nadu, India
-                </p>
-                <h1 className="text-2xl text-orange-400 font-bold mb-2 py-2">CANADA</h1>
-                <p className="text-lg leading-relaxed">
-                  Visai Engergy<br />
-                  500 - 4th Avenue SW, <br />
-                  Suite 2500, Calgary,AB T2P2V6, <br />
-                  +1 403-604-9777 <br />
-                  info@visaienergy.com <br/>
-                  <a 
-                  href="https://www.visaienergy.com" 
-                  className="text-blue-400 hover:text-orange-400 font-semibold "
-                  target="_blank" 
-                   rel="noopener noreferrer"
-                   >
-                   www.visaienergy.com
-                  </a>
-                </p>
-                <h1 className="text-2xl text-orange-400 font-bold mb-2 py-2">USA</h1>
-                <p className="text-lg leading-relaxed">
-                  Visai Engineering LLC <br />
-                  6575 West Loop South, Suite 500 <br />
-                  Bellaire, Texas 77401 <br />
-                  United States of America
-                </p>
-              </div>
-
-            </div>
-          </div>
+                     </div>
 
           {/* Copyright Text */}
           <p className="text-center text-lg mt-8 border-t border-gray-600 pt-6">
