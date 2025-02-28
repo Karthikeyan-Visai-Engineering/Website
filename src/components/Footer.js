@@ -24,27 +24,27 @@ function Footer() {
               </h2>
 
               <div className=" text-white p-2 rounded-lg shadow-lg mb-4">
-                <h1 className="text-2xl text-orange-400 font-bold mb-2 ">INDIA</h1>
+                <h1 className="text-2xl text-orange-400 font-bold mb-2 ">USA</h1>
                 <p className="text-lg leading-relaxed">
-                  Visai Engineering India Pvt Ltd <br/>
-                  136, Arcot Road, 3rd Floor Suite #325, <br />
-                  Shyamala Tower, Saligramam, <br />
-                  Chennai - 93, Tamil Nadu, India<br />
-                  Ph - +91 72008 73833<br />
-                  </p>
+                  Visai Engineering  Inc <br />
+                  6575 West Loop South, Suite 500 <br />
+                  Bellaire, Texas 77401 <br />
+                  Ph : 270 777 2620 <br/>
+                </p>
                 <h1 className="text-2xl text-orange-400 font-bold mb-2 py-2">CANADA</h1>
                 <p className="text-lg leading-relaxed">
                   Visai Engineering Inc<br />
                   500 - 4th Avenue SW, Suite 2500 <br />
-                  Calgary,AB T2P2V6, <br />
-                  Ph - +1 403-604-9777 <br />
+                  Calgary, T2P 2V6, Alberta <br />
+                  Ph : 403 604 9777 <br />
                 </p>
-                <h1 className="text-2xl text-orange-400 font-bold mb-2 py-2">USA</h1>
+                <h1 className="text-2xl text-orange-400 font-bold mb-2 py-2">INDIA</h1>
                 <p className="text-lg leading-relaxed">
-                  Visai Engineering  <br />
-                  6575 West Loop South, Suite 500 <br />
-                  Bellaire, Texas 77401 <br />
-                  Ph - +1 270-777-2620
+                Visai Engineering India Pvt Ltd <br/>
+                  136, Arcot Road, 3rd Floor Suite #325, <br />
+                  Shyamala Tower, Saligramam, <br />
+                  Chennai 600093, Tamil Nadu, India<br />
+                  Ph : +91 72008 73833
                 </p>
               </div>
 
